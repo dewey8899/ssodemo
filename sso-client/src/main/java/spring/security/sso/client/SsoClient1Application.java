@@ -15,7 +15,6 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 @RestController
 @EnableOAuth2Sso
-@EnableAutoConfiguration
 public class SsoClient1Application {
     @GetMapping("/user")
     public Authentication user(Authentication user) {
