@@ -1,4 +1,4 @@
-package spring.security.sso.client.service;
+package spring.security.sso.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.authority.AuthorityUtils;

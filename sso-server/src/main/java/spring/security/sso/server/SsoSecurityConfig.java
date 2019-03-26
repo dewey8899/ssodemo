@@ -1,4 +1,4 @@
-package spring.security.sso.client.sso.server.server;
+package spring.security.sso.server;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;

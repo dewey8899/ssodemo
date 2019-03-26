@@ -1,4 +1,4 @@
-package spring.security.sso.client.sso.server.server;
+package spring.security.sso.server;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -34,8 +34,9 @@ public class SsoAuthenticationServerConfig extends AuthorizationServerConfigurer
 
     @Override
     public void configure(AuthorizationServerSecurityConfigurer security) throws Exception {
-        security.tokenKeyAccess("permitAll()")
-                .checkTokenAccess("isAuthenticated()");
+//        security.tokenKeyAccess("permitAll()")
+//                .checkTokenAccess("isAuthenticated()");
+        security.tokenKeyAccess("isAuthenticated()");
     }
 
     @Override
@@ -52,7 +53,7 @@ public class SsoAuthenticationServerConfig extends AuthorizationServerConfigurer
     public JwtAccessTokenConverter jwtAccessTokenConverter() {
         JwtAccessTokenConverter jwtAccessTokenConverter = new JwtAccessTokenConverter();
         // 保证JWT安全的唯一方式
-        jwtAccessTokenConverter.setSigningKey("ZPW");
+        jwtAccessTokenConverter.setSigningKey("duwei");
         return jwtAccessTokenConverter;
     }
 }

@@ -1,4 +1,4 @@
-package spring.security.sso.client.service;
+package spring.security.sso.service;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
