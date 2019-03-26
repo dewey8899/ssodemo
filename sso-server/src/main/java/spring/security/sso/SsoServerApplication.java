@@ -9,7 +9,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * Date on 2019/3/26
  */
 @SpringBootApplication
-@EnableAutoConfiguration
 public class SsoServerApplication {
     public static void main(String[] args) {
         SpringApplication.run(SsoServerApplication.class, args);
